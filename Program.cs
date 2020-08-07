@@ -4,7 +4,9 @@ namespace CourseWeek2Lesson4
 {
     class Program
     {
-
+        static void Main(string[] args)
+        {
+        }
 
         public static void Exercise1()
         {
@@ -36,6 +38,18 @@ namespace CourseWeek2Lesson4
             Console.WriteLine($"{last}{second}{first}");
         }
 
+
+        public static double Exercise3(double _length,double _width)
+        {
+            /* 3.Napisz program, który na podstawie podanej szerokości i długości prostokąta wyliczy długość przekątnej. (Aby, obliczyć kwadrat liczby użyj metody Math.Pow()) */
+            double length = _length;
+            double width = _width;
+
+            double diagonal = Math.Sqrt(Math.Pow(length, 2.0) + Math.Pow(width, 2.0));
+
+            Console.WriteLine($"Diagonal of Rectangle which length is {length} and width is {width} equals = {diagonal}");
+            return diagonal;
+        }
 
     }
 }
