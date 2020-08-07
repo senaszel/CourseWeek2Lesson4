@@ -6,6 +6,7 @@ namespace CourseWeek2Lesson4
     {
         static void Main(string[] args)
         {
+            Exercise5();
         }
 
         public static void Exercise1()
@@ -31,6 +32,7 @@ namespace CourseWeek2Lesson4
         public static void Exercise2()
         {
             /* 2. Napisz program, w którym stworzysz 3 zmienne z jedną literą, a następnie wypiszesz je w odwrotnej kolejności niż zostały zadeklarowane. */
+
             char first = 'c';
             char second = 'b';
             char last = 'a';
@@ -42,6 +44,7 @@ namespace CourseWeek2Lesson4
         public static double Exercise3(double _length,double _width)
         {
             /* 3. Napisz program, który na podstawie podanej szerokości i długości prostokąta wyliczy długość przekątnej. (Aby, obliczyć kwadrat liczby użyj metody Math.Pow()) */
+
             double length = _length;
             double width = _width;
 
@@ -64,6 +67,27 @@ namespace CourseWeek2Lesson4
             string dotNetSchool = "Szkoła Dotneta";
         }
 
+        public static void Exercise5()
+        {
+            /* 5. Napisz program w którym poprosisz użytkownika o jego dane personalne tj. Imię, nazwisko, numer telefonu, adres email, wzrost, waga (np. 85,7), itp (postaraj się wymyślić jak najwięcej)
+               i spróbuj przekonwertować odpowiedź do odpowiedniego typu danych używając metody: typDanych.Parse(odpowiedźOdUżytkownika). */
+
+            Console.WriteLine("You'll be asked for personal information, please provide:");
+            Console.Write("You're first name: ");
+            string firstName = Console.ReadLine();
+            Console.Write("Last name: ");
+            string lastName = Console.ReadLine();
+            Console.Write("Telephone number (digits only, do not use spaces etc): ");
+            uint telephoneNumber = uint.Parse(Console.ReadLine());
+            Console.Write("Email address: ");
+            string email = Console.ReadLine();
+            Console.Write("Height: ");
+            uint height = uint.Parse(Console.ReadLine());
+            Console.Write("Weight: (Rounded up up to 0.5 kilogram)");
+            double weight = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Thank you for participation.");
+        }
 
     }
 }
