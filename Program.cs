@@ -26,5 +26,16 @@ namespace CourseWeek2Lesson4
         }
 
 
+        public static void Exercise2()
+        {
+            /* 2. Napisz program, w którym stworzysz 3 zmienne z jedną literą, a następnie wypiszesz je w odwrotnej kolejności niż zostały zadeklarowane. */
+            char first = 'c';
+            char second = 'b';
+            char last = 'a';
+
+            Console.WriteLine($"{last}{second}{first}");
+        }
+
+
     }
 }
